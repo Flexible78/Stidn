@@ -1,0 +1,23 @@
+:root {
+   /* global */
+   --container-max-width: 1218px;
+   --container-safety-indents: 15px;
+
+   /* fonts */
+   --font-family: "Montserrat", sans-serif;
+   --second-family: "Roboto", sans-serif;
+   --third-family: "SF Pro Text", sans-serif;
+   --font3: "Inter", sans-serif;
+   --font-size: initial;
+   --line-height: normal;
+
+   --green-1: #86ac6a;
+   --green-2: #d9edca;
+   --green-3: #1f302d;
+   --green-4: #eef3ea;
+   --Gray-1: #232323;
+   --Gray-2: #4f4f4f;
+   --Gray-3: #828282;
+   --white: #ffffff;
+   --black: #000000;
+}
