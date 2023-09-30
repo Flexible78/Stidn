@@ -9,5 +9,5 @@
 @import url("base/global.css");
 
 /* Components */
-
+@import url("components/header.css");
 /* Sections */
