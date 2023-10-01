@@ -1,0 +1,32 @@
+.promo {
+   padding: 210px 0 75px;
+   background-image: url("/img/promo_bg.png");
+   background-position: center center;
+   /* background-size: 100% 100%; */
+   background-repeat: no-repeat;
+   background-color: var(--gray-1);
+}
+
+
+.promo__container {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   column-gap: 30px;
+}
+
+
+.promo__content {
+   grid-column: 6 span;
+}
+
+
+.promo__title {
+   grid-column: 7 span;
+   padding-bottom: 20px;
+}
+
+
+.promo__page-descr {
+   padding-right: 136px;
+   padding-bottom: 40px;
+}

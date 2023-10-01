@@ -1,0 +1,22 @@
+.page-title {
+   font-weight: 700;
+   font-size: 55px;
+   line-height: 1.4;
+   color: var(--white);
+
+   @media (max-width: 375px) {
+      font-size: 28px;
+   }
+}
+
+
+.section-title {
+   font-weight: 700;
+   font-size: 35px;
+   line-height: 1.5;
+   color: var(--gray-1);
+   @media (max-width: 375px) {
+      font-size: 20px;
+      line-height: 1.6;
+   }
+}
