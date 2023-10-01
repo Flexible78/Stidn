@@ -1,6 +1,5 @@
 .header {
    padding: 53px 20px 53px;
-
    background-color: #bdbdbd;
 }
 
@@ -35,6 +34,10 @@
    background-size: 24px 24px;
    background-repeat: no-repeat;
    backdrop-filter: blur(5px);
+
+   &::placeholder {
+      color: rgba(255, 255, 255, 0.3);
+   }
 }
 
 
@@ -43,10 +46,12 @@ ul {
    column-gap: 60px;
    align-items: center;
    justify-content: space-between;
+
+   & a {
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.8);
+   }
 }
 
 
-ul .a {
-   font-weight: 500;
-   opacity: 0.2;
-}
+
