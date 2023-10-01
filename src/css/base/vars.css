@@ -15,9 +15,13 @@
    --green-2: #d9edca;
    --green-3: #1f302d;
    --green-4: #eef3ea;
-   --Gray-1: #232323;
-   --Gray-2: #4f4f4f;
-   --Gray-3: #828282;
+   --gray-1: #232323;
+   --gray-2: #4f4f4f;
+   --gray-3: #828282;
+   --gray-4: #bdbdbd;
+   --gray-5: #e0e0e0;
    --white: #ffffff;
    --black: #000000;
+   --transparent: transparent;
+   --tomato: #ff6347;
 }

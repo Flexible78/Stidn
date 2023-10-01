@@ -1,0 +1,159 @@
+.btn {
+   border-radius: 15px;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.7;
+   text-transform: uppercase;
+   color: var(--green-1);
+   transition: all 0.16s ease;
+
+   --btn-fill-bg-green: var(--green-1);
+   --btn-fill-text-white: var(--white);
+   --btn-fill-bg-white: var(--white);
+   --btn-fill-text-green: var(--green-1);
+   --btn-fill-bg-transparent: var(--transparent);
+   --btn-fill-bg-gray: var(--gray-5);
+}
+
+
+.btn--fill {
+   border: none;
+   color: var(--btn-fill-text-white);
+   background-color: var(--btn-fill-bg-green);
+
+   &:focus {
+      outline: none;
+   }
+
+   &:focus-visible {
+      outline: 3px solid var(--tomato);
+      outline-offset: 1px;
+   }
+
+   &:hover {
+      background-color: var(--btn-fill-bg-white);
+   }
+
+   &:active {
+      background-color: var(--btn-fill-bg-white);
+   }
+}
+
+
+.btn--green-outline {
+   border: 2px solid var(--btn-fill-bg-green);
+   background-color: transparent;
+
+   &:focus {
+      outline: 3px solid var(--tomato);
+      outline-offset: 2px;
+      transition: outline 0.16s linear;
+   }
+
+   &:focus-visible {
+      outline: 3px solid var(--tomato);
+      outline-offset: 1px;
+   }
+
+   &:hover {
+      color: var(--btn-fill-text-green);
+      background-color: var(--btn-fill-bg-gray);
+   }
+
+   &:active {
+      color: var(--tomato);
+      background-color: var(--btn-fill-bg-gray);
+   }
+}
+
+
+.btn--outline {
+   border: none;
+   background: none;
+
+   &:focus {
+      outline: 3px solid var(--tomato);
+      outline-offset: 2px;
+      transition: outline 0.16s linear;
+   }
+
+   &:focus-visible {
+      outline: 3px solid var(--tomato);
+      outline-offset: 1px;
+   }
+
+   &:hover {
+      color: var(--btn-fill-text-green);
+      background-color: var(--btn-fill-bg-gray);
+   }
+
+   &:active {
+      color: var(--tomato);
+      background-color: var(--btn-fill-bg-gray);
+   }
+}
+
+
+.btn--transparent {
+   border: 2px solid #ffffff;
+   background-color: transparent;
+
+   &:focus {
+      outline: none;
+   }
+
+   &:focus-visible {
+      outline: 3px solid var(--tomato);
+      outline-offset: 1px;
+   }
+
+   &:hover {
+      border-color: var(--tomato);
+      color: var(--tomato);
+      background-color: var(--tomato);
+   }
+
+   &:active {
+      border-color: var(--tomato);
+      color: var(--btn-fill-text-green);
+   }
+}
+
+
+.btn--white {
+   color: var(--btn-fill-text-green);
+   transition: outline 0.16s linear;
+
+   &:focus {
+      outline: none;
+   }
+
+   &:focus-visible {
+      outline: 3px solid var(--tomato);
+      outline-offset: 1px;
+   }
+
+   &:hover {
+      border-color: var(--tomato);
+      color: var(--tomato);
+      background-color: var(--tomato);
+   }
+
+   &:active {
+      border-color: var(--tomato);
+      color: var(--btn-fill-text-green);
+   }
+}
+
+
+.btn--regular {
+   padding: 15px 35px;
+   font-size: 20px;
+
+   @media (max-width: 375px) {
+      padding: 0 24px;
+      font-size: 13px;
+      line-height: 3.25;
+   }
+}
+
