@@ -13,6 +13,8 @@
 
 
 .header__container {
+   position: relative;
+   top: 179px;
    display: flex;
    align-items: center;
    justify-content: space-between;
