@@ -15,8 +15,14 @@
    font-size: 35px;
    line-height: 1.5;
    color: var(--gray-1);
+
    @media (max-width: 375px) {
       font-size: 20px;
       line-height: 1.6;
    }
+}
+
+
+.section-title--green {
+   color: var(--green-1);
 }
