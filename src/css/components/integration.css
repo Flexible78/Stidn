@@ -1,0 +1,15 @@
+.integration__container {
+   padding: 52px 0 752px;
+   background: var(--green-4, #eef3ea);
+}
+
+
+.integration__section-title {
+   max-width: 723px;
+   /* margin-bottom: 752pх; */
+}
+
+
+.integration__link {
+   padding: 9px 0 0 0;
+}
