@@ -9,9 +9,9 @@
 @import url("base/global.css");
 
 /* Components */
-@import url("components/_buttons.css");
-@import url("components/_titles.css");
-@import url("components/_more-btn.css");
+@import url("components/buttons.css");
+@import url("components/titles.css");
+@import url("components/more-btn.css");
 
 /* Sections */
 @import url("components/header.css");
