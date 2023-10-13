@@ -1,0 +1,36 @@
+<svg viewBox="0 0 95 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <g id="Frame">
+      <g id="Clip path group">
+         <mask id="mask0_5065_15566" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="-7" width="95"
+               height="96">
+            <g id="__lottie_element_32">
+               <path id="Vector" d="M95 -6.74207H0V88.2579H95V-6.74207Z" fill="white"/>
+            </g>
+         </mask>
+         <g mask="url(#mask0_5065_15566)">
+            <g id="Group">
+               <g id="Group_2">
+                  <g id="Group_3">
+                     <path id="Vector_2"
+                           d="M46.8214 16.1492L13.9106 66.7301L28.8392 80.3015H63.7857L80.0714 66.0515L46.8214 16.1492Z"
+                           stroke="#86AC6A" stroke-width="2.03571"/>
+                  </g>
+                  <g id="Group_4">
+                     <path id="Vector_3" d="M29.5179 79.9623L46.8215 15.8377L63.7858 79.9623" stroke="#86AC6A"
+                           stroke-width="1.35714"/>
+                  </g>
+                  <g id="Group_5">
+                     <path id="Vector_4"
+                           d="M13.9106 66.3908L31.8928 57.2301H62.7678C62.7678 57.2301 75.9999 63.5632 80.0714 66.0515"
+                           stroke="#D9EDCA" stroke-width="1.35714"/>
+                  </g>
+                  <g id="Group_6">
+                     <path id="Vector_5" d="M31.7231 57.5971L46.8214 15.7733L62.7678 57.5971" stroke="#D9EDCA"
+                           stroke-width="1.35714"/>
+                  </g>
+               </g>
+            </g>
+         </g>
+      </g>
+   </g>
+</svg>

@@ -1,38 +1,18 @@
 .more-btn {
-   position: absolute;
-   right: 15px;
-   bottom: 0px;
    display: flex;
    column-gap: 5px;
-   align-items: flex-end;
-   justify-content: center;
-   width: min-content;
+   align-items: center;
+   font-weight: 700;
+   font-size: 20px;
+   color: var(--text-color);
+   transition: all 0.18s ease-in-out;
+   --text-color: var(--green-1);
 
-   & title {
-
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 1.7;
-      text-align: right;
-      text-transform: uppercase;
-      color: var(--green-1, #86ac6a);
-   }
-
-   & arrow {
+   & svg {
       width: 24px;
       height: 24px;
-      border: none;
-      border-radius: 4px;
-      background-color: transparent;
-      transition: all 0.18s ease-in-out;
-   }
-
-   & icon {
-      width: 24px;
-      height: 24px;
-      padding: 5px 0px;
-      fill: var(--green-1);
-      background-color: var(--green-1);
+      /* border-radius: 4px; */
+      fill: currentColor;
    }
 
    &:focus {
@@ -40,13 +20,18 @@
    }
 
    &:focus-visible {
-      outline: 3px solid var(--white);
-      outline-offset: 5px;
+      outline: 4px solid tomato;
+      outline-offset: 2px;
       border-radius: 1px;
    }
 
    &:hover {
       text-decoration: underline;
-      color: var(--white);
+      color: #a0d27a;
    }
+}
+
+
+.more-btn--white {
+   --text-color: var(--white);
 }

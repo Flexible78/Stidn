@@ -1,0 +1,103 @@
+.machine-learning {
+   padding: 91px 0 314px;
+   background: var(--green-3, #263936);
+}
+
+
+.machine-learning__header {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   align-items: start;
+   justify-items: start;
+
+   & h2 {
+      grid-column: 6 span;
+      max-width: 723px;
+      color: var(--white);
+
+      & span {
+         color: var(--green-1, #86ac6a);
+      }
+   }
+
+   & .more-btn {
+      grid-column: 10 / span 2;
+      margin-top: 32px;
+   }
+}
+
+
+.machine-learning__content {
+
+}
+
+
+.ml-content {
+}
+
+
+.machine-learning__card-list {
+}
+
+
+.ml-card-list {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   column-gap: 30px;
+}
+
+
+.ml-card-list__item {
+   position: relative;
+   top: 180px;
+   grid-column: 3 span;
+   justify-content: center;
+   border-radius: 15px;
+   padding: 93px 18px 75px 18px;
+   background-color: var(--white, #ffffff);
+
+   & h3 {
+      text-align: center;
+      color: var(--gray-1, #232323);
+   }
+
+   & p {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 1.8;
+      text-align: center;
+      color: var(--gray-1, #232323);
+   }
+}
+
+
+.ml-card-list__icon {
+   position: relative;
+   left: 50%;
+   top: -94px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 135px;
+   height: 135px;
+   border: 4px solid #d9edca;
+   border-radius: 70px;
+   background: var(--white, #ffffff);
+   background-size: cover;
+   background-repeat: no-repeat;
+   transform: translate(-50%, -50%);
+
+   & svg {
+
+      left: 10px;
+      top: 0px;
+      width: 95px;
+
+      height: 95px;
+      background-repeat: no-repeat;
+   }
+}
+
+
+.ml-card-list__content {
+}
