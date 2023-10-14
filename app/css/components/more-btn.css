@@ -4,9 +4,11 @@
    align-items: center;
    font-weight: 700;
    font-size: 20px;
+   font-style:;
    color: var(--text-color);
    transition: all 0.18s ease-in-out;
    --text-color: var(--green-1);
+   text-transform: uppercase;
 
    & svg {
       width: 24px;

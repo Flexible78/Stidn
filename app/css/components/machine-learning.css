@@ -1,5 +1,8 @@
 .machine-learning {
-   padding: 91px 0 314px;
+   display: flex;
+   flex-shrink: 0;
+   max-height: 511px;
+   padding-top: 91px;
    background: var(--green-3, #263936);
 }
 
@@ -18,10 +21,12 @@
       & span {
          color: var(--green-1, #86ac6a);
       }
+
    }
 
    & .more-btn {
-      grid-column: 10 / span 2;
+      grid-column: 10 / span 3;
+      justify-self: end;
       margin-top: 32px;
    }
 }
@@ -44,16 +49,20 @@
    display: grid;
    grid-template-columns: repeat(12, 1fr);
    column-gap: 30px;
+   align-items: start;
+   justify-items: start;
 }
 
 
 .ml-card-list__item {
    position: relative;
-   top: 180px;
+   top: 123px;
    grid-column: 3 span;
    justify-content: center;
+   height: 367px;
    border-radius: 15px;
    padding: 93px 18px 75px 18px;
+   box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.10);
    background-color: var(--white, #ffffff);
 
    & h3 {
@@ -72,9 +81,9 @@
 
 
 .ml-card-list__icon {
-   position: relative;
+   position: absolute;
    left: 50%;
-   top: -94px;
+   top: 0;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -92,8 +101,8 @@
       left: 10px;
       top: 0px;
       width: 95px;
-
       height: 95px;
+      fill: var(--green-1, #86ac6a);
       background-repeat: no-repeat;
    }
 }

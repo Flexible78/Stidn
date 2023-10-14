@@ -17,6 +17,7 @@
 
    & .more-btn {
       grid-column: 3 span;
+      justify-self: end;
       margin-top: 32px;
    }
 }
