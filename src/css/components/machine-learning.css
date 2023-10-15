@@ -32,19 +32,6 @@
 }
 
 
-.machine-learning__content {
-
-}
-
-
-.ml-content {
-}
-
-
-.machine-learning__card-list {
-}
-
-
 .ml-card-list {
    display: grid;
    grid-template-columns: repeat(12, 1fr);

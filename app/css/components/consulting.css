@@ -1,0 +1,53 @@
+.consulting {
+   border-radius: 25px;
+   padding: 50px 70px 48px 70px;
+   background: var(--green-3, #1f302d);
+}
+
+
+.consulting__container {
+
+   & h2 {
+      max-width: 528px;
+      text-align: center;
+      color: var(--white, #ffffff);
+
+      & span {
+         color: var(--green-1, #86ac6a);
+      }
+   }
+}
+
+
+.consulting__content {
+   & ol {
+      display: flex;
+      row-gap: 10px;
+      column-gap: 50px;
+      margin-top: 50px;
+
+      & li {
+         width: 326px;
+         text-align: center;
+
+         & span {
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 1.5;
+            color: var(--green-1, #86ac6a);
+         }
+
+         & h3 {
+            color: var(--white, #ffffff);
+         }
+
+         & p {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.80);
+            color: var(--white, #ffffff);
+         }
+      }
+   }
+}
