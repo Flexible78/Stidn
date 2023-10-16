@@ -122,6 +122,7 @@
 
 .btn--white {
    color: var(--btn-fill-text-green);
+   background-color: var(--btn-fill-bg-white);
    transition: outline 0.16s linear;
 
    &:focus {

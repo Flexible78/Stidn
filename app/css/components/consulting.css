@@ -9,6 +9,8 @@
 
    & h2 {
       max-width: 528px;
+
+      margin: 0 auto;
       text-align: center;
       color: var(--white, #ffffff);
 
@@ -22,8 +24,10 @@
 .consulting__content {
    & ol {
       display: flex;
+      flex-wrap: wrap;
       row-gap: 10px;
       column-gap: 50px;
+      justify-content: center;
       margin-top: 50px;
 
       & li {
@@ -31,10 +35,27 @@
          text-align: center;
 
          & span {
+            position: relative;
             font-weight: 700;
             font-size: 60px;
             line-height: 1.5;
+            text-shadow: 0px 7px 80px rgba(134, 172, 106, 0.47), 0px 3.50342px 40.0391px rgba(134, 172, 106, 0.357356), 0px 2.1103px 24.1177px rgba(134, 172, 106, 0.306247), 0px 1.35239px 15.4559px rgba(134, 172, 106, 0.268321), 0px 0.876509px 10.0172px rgba(134, 172, 106, 0.235), 0px 0.551752px 6.30574px rgba(134, 172, 106, 0.201679), 0px 0.317016px 3.62304px rgba(134, 172, 106, 0.163753), 0px 0.139527px 1.59459px rgba(134, 172, 106, 0.112644);
             color: var(--green-1, #86ac6a);
+
+            &::after {
+               content: "";
+               position: absolute;
+               left: 50%;
+               top: -40%;
+               width: 120px;
+               height: 120px;
+               border-radius: 50px;
+               background-image: url('/img/ic-consult-spinner.svg');
+               background-position: center;
+               background-size: contain;
+               background-repeat: no-repeat;
+               transform: translateX(-50%);
+            }
          }
 
          & h3 {
@@ -46,8 +67,15 @@
             font-size: 20px;
             line-height: 1.7;
             color: rgba(255, 255, 255, 0.80);
-            color: var(--white, #ffffff);
          }
       }
    }
+}
+
+
+.consulting__more-link {
+   display: block;
+   width: fit-content;
+   margin: 75px auto 0 auto;
+   text-align: center;
 }
