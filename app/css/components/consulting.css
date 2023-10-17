@@ -45,16 +45,17 @@
             &::after {
                content: "";
                position: absolute;
-               left: 50%;
-               top: -40%;
-               width: 120px;
-               height: 120px;
+               left: 59%;
+               top: 43%;
+               width: 190px;
+               height: 190px;
                border-radius: 50px;
                background-image: url('/img/ic-consult-spinner.svg');
                background-position: center;
-               background-size: contain;
+               background-size: cover;
                background-repeat: no-repeat;
-               transform: translateX(-50%);
+               transform: translate(-50%, -50%);
+
             }
          }
 
