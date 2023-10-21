@@ -33,6 +33,7 @@
       & li {
          width: 326px;
          text-align: center;
+         background: none;
 
          & span {
             position: relative;

@@ -1,0 +1,109 @@
+.analitics {
+   padding: 110px 0 33px;
+   background: var(--white, #ffffff);
+}
+
+
+.analitics__container {
+}
+
+
+.analitics__header {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   align-items: start;
+   justify-items: start;
+
+   & h2 {
+      grid-column: 7 span;
+
+      & span {
+         color: var(--green-1, #86ac6a);
+      }
+   }
+
+   & .more-btn {
+      grid-column: 10 / span 3;
+      justify-self: end;
+      margin-top: 16px;
+   }
+}
+
+
+.analitics__content {
+   margin-top: 37px;
+
+   & ul {
+      display: flex;
+      column-gap: 12px;
+      justify-content: space-between;
+
+      & li {
+         display: flex;
+         flex-direction: column;
+         row-gap: 15px;
+         align-items: center;
+         justify-content: center;
+         max-width: 193px;
+         border-radius: 15px;
+         padding: 25px 16px 118px 16px;
+         font-weight: 700;
+         font-size: 16px;
+         line-height: 1.7;
+         text-align: center;
+         color: var(--gray-1, #232323);
+
+         background: var(--bg-list);
+         --bg-list: var(--green-4, #eef3ea);
+
+         &:hover {
+            color: var(--white, #ffffff);
+            background: var(--bg-list);
+            --bg-list: var(--green-1, #86ac6a);
+
+            & div {
+               background: #eef3ea;
+
+               & p {
+                  background: #86ac6a;
+               }
+            }
+         }
+
+         & p {
+            max-width: 158px;
+         }
+
+         & div {
+            z-index: 5;
+            width: 66px;
+            height: 66px;
+            border-radius: 50%;
+            padding: 12px 11px 12px 21px;
+            background: var(--green-1, #86ac6a);
+
+            & p {
+               /* position: relative; */
+               z-index: 10;
+               width: 34.17px;
+               height: 34.17px;
+               border-radius: 50%;
+               background: #eef3ea;
+            }
+
+            & svg {
+               position: relative;
+               right: 18px;
+               top: 9px;
+               width: 41px;
+               height: 41px;
+               fill: var(--green-3, #1f302d);
+               background-repeat: no-repeat;
+            }
+         }
+      }
+   }
+}
+
+
+
