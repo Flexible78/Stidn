@@ -4,10 +4,6 @@
 }
 
 
-.analitics__container {
-}
-
-
 .analitics__header {
    display: grid;
    grid-template-columns: repeat(12, 1fr);
@@ -31,79 +27,117 @@
 
 
 .analitics__content {
-   margin-top: 37px;
+   margin-top: 70px;
 
    & ul {
       display: flex;
       column-gap: 12px;
       justify-content: space-between;
 
+      --font-color: var(--gray-1, #232323);
+      --bg-list: var(--green-4, #eef3ea);
+      --circle-color: var(--white, #ffffff);
+
       & li {
          display: flex;
          flex-direction: column;
+
          row-gap: 15px;
          align-items: center;
          justify-content: center;
          max-width: 193px;
          border-radius: 15px;
-         padding: 25px 16px 118px 16px;
+         padding: 25px 16px 90px 16px;
          font-weight: 700;
          font-size: 16px;
          line-height: 1.7;
          text-align: center;
-         color: var(--gray-1, #232323);
-
+         color: var(--font-color);
          background: var(--bg-list);
-         --bg-list: var(--green-4, #eef3ea);
+         transition: all 0.15s ease-in-out;
 
          &:hover {
-            color: var(--white, #ffffff);
-            background: var(--bg-list);
+            --font-color: var(--white, #ffffff);
             --bg-list: var(--green-1, #86ac6a);
 
             & div {
-               background: #eef3ea;
+               background: var(--circle-color-transparent);
+               --circle-color-transparent: #eef3ea;
 
-               & p {
-                  background: #86ac6a;
+               &::after {
+                  --circle-color: #86ac6a;
+               }
+            }
+
+            & span {
+               & svg {
+                  fill: var(--white);
+                  transform: none;
                }
             }
          }
 
-         & p {
-            max-width: 158px;
+      }
+
+      & span {
+         display: block;
+         width: 27px;
+         height: 15px;
+         color: var(--green-1);
+
+         & svg {
+            position: relative;
+            bottom: 76%;
+            z-index: 35;
+            width: 100%;
+            height: 100%;
+            margin-top: 72px;
+            fill: currentColor;
+            transform: rotate(180deg);
+
+            &:hover {
+               fill: var(--white);
+               transform: none;
+            }
+         }
+      }
+
+      & p {
+         max-width: 158px;
+      }
+
+      & div {
+         position: relative;
+         z-index: 5;
+         width: 66px;
+         height: 66px;
+         border-radius: 50%;
+         padding: 17px 13px 0;
+         background: var(--circle-color-solid);
+         --circle-color-solid: var(--green-1, #86ac6a);
+
+         &::after {
+            content: "";
+            position: absolute;
+            left: 59%;
+            top: 43%;
+            z-index: 10;
+            display: block;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: var(--circle-color);
+            transform: translate(-50%, -50%);
          }
 
-         & div {
-            z-index: 5;
-            width: 66px;
-            height: 66px;
-            border-radius: 50%;
-            padding: 12px 11px 12px 21px;
-            background: var(--green-1, #86ac6a);
-
-            & p {
-               /* position: relative; */
-               z-index: 10;
-               width: 34.17px;
-               height: 34.17px;
-               border-radius: 50%;
-               background: #eef3ea;
-            }
-
-            & svg {
-               position: relative;
-               right: 18px;
-               top: 9px;
-               width: 41px;
-               height: 41px;
-               fill: var(--green-3, #1f302d);
-               background-repeat: no-repeat;
-            }
+         & svg {
+            position: relative;
+            z-index: 25;
+            width: 41px;
+            height: 41px;
+            fill: var(--green-3, #1f302d);
+            background-repeat: no-repeat;
          }
       }
    }
 }
-
-
-

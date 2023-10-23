@@ -136,8 +136,8 @@
 
    &:hover {
       border-color: var(--tomato);
-      color: var(--tomato);
-      background-color: var(--tomato);
+      color: var(--white);
+      background-color: var(--green-1);
    }
 
    &:active {
