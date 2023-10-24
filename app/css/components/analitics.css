@@ -62,10 +62,13 @@
 
             & div {
                background: var(--circle-color-transparent);
+               transition: all 0.31s ease-in-out;
                --circle-color-transparent: #eef3ea;
 
                &::after {
+                  transition: all 0.31s ease-in-out;
                   --circle-color: #86ac6a;
+
                }
             }
 
@@ -73,6 +76,7 @@
                & svg {
                   fill: var(--white);
                   transform: none;
+                  transition: all 0.31s ease-in-out;
                }
             }
          }
@@ -84,6 +88,7 @@
          width: 27px;
          height: 15px;
          color: var(--green-1);
+         transition: all 0.31s ease-in-out;
 
          & svg {
             position: relative;
@@ -94,10 +99,13 @@
             /* margin-top: 72px; */
             fill: currentColor;
             transform: rotate(180deg);
+            transition: all 0.31s ease-in-out;
 
             &:hover {
                fill: var(--white);
                transform: none;
+               transition: all 0.31s ease-in-out;
+
             }
          }
       }
@@ -105,6 +113,8 @@
       & p {
          flex: 0;
          max-width: 158px;
+         transition: all 0.31s ease-in-out;
+
       }
 
       & div {
@@ -115,6 +125,7 @@
          border-radius: 50%;
          padding: 17px 13px 0;
          background: var(--circle-color-solid);
+         transition: all 0.31s ease-in-out;
          --circle-color-solid: var(--green-1, #86ac6a);
 
          &::after {
@@ -129,6 +140,8 @@
             border-radius: 50%;
             background: var(--circle-color);
             transform: translate(-50%, -50%);
+            transition: all 0.11s ease-in-out;
+
          }
 
          & svg {
@@ -138,6 +151,7 @@
             height: 41px;
             fill: var(--green-3, #1f302d);
             background-repeat: no-repeat;
+            transition: all 0.11s ease-in-out;
          }
       }
    }
@@ -151,8 +165,10 @@
 .dropdown-container {
    display: none;
    border-radius: 15px;
-   box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.10);
+   box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.10);
    background: #ffffff;
+   opacity: 0;
+   transition: opacity 0.13s ease, pointer-events 0.3s;
 
    & ul {
       display: flex;
@@ -168,6 +184,7 @@
       & li {
          position: relative;
          padding-left: 18px;
+         transition: all 0.11s ease-in-out;
 
          &::before {
             content: ""; /* Юникод символ буллета */
@@ -182,7 +199,7 @@
             color: currentColor;
             background-color: currentColor;
             transform: translate(-50%, -50%);
-            /* transform: translateY(-50%); */
+            transition: all 0.31s ease-in-out;
          }
       }
    }
@@ -191,6 +208,9 @@
 
 .dropdown-container.activated {
    display: flex;
+   opacity: 1;
+   transition: all 1.6s ease-in-out;
+   pointer-events: auto;
 }
 
 
