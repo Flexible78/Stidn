@@ -26,144 +26,125 @@
 }
 
 
-.analitics__content {
+.analitics__list {
+   position: relative;
+   grid-column: 12 span;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(193px, 1fr));
+   grid-template-rows: minmax(278px, auto);
+   row-gap: 20px;
+   column-gap: 12px;
    margin-top: 70px;
 
-   & ul {
+   --font-color: var(--gray-1, #232323);
+   --bg-list: var(--green-4, #eef3ea);
+   --circle-color: var(--white, #ffffff);
+
+   & .analitics__card {
       display: flex;
-      column-gap: 12px;
-      align-items: start;
+      flex-direction: column;
+      row-gap: 15px;
+      align-items: center;
+      justify-content: start;
+      height: 100%;
+      /* min-height: 278px; */
+      border-radius: 15px;
+      padding: 25px 16px 28px 16px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.7;
+      text-align: center;
+      color: var(--font-color);
+      background: var(--bg-list);
+      transition: all 0.31s ease-in-out;
 
-      justify-content: space-between;
-      --font-color: var(--gray-1, #232323);
-      --bg-list: var(--green-4, #eef3ea);
-      --circle-color: var(--white, #ffffff);
+      & span {
+         & svg {
+            fill: var(--white);
+            transform: none;
+            transition: all 0.31s ease-in-out;
+         }
+      }
+   }
 
-      & li {
-         display: flex;
-         flex-direction: column;
-         row-gap: 15px;
-         align-items: center;
-         justify-content: start;
-         min-height: 278px;
-         border-radius: 15px;
-         padding: 25px 16px 28px 16px;
-         font-weight: 700;
-         font-size: 16px;
-         line-height: 1.7;
-         text-align: center;
-         color: var(--font-color);
-         background: var(--bg-list);
+   & span {
+      flex-grow: 1;
+      width: 27px;
+      height: 15px;
+      color: var(--green-1);
+      transition: all 0.31s ease-in-out;
+
+      & svg {
+         position: relative;
+         top: 42%;
+         z-index: 35;
+         width: 100%;
+         height: 100%;
+         /* margin-top: 72px; */
+         fill: currentColor;
+         transform: rotate(180deg);
          transition: all 0.31s ease-in-out;
 
          &:hover {
-            --font-color: var(--white, #ffffff);
-            --bg-list: var(--green-1, #86ac6a);
-
-            & div {
-               background: var(--circle-color-transparent);
-               transition: all 0.31s ease-in-out;
-               --circle-color-transparent: #eef3ea;
-
-               &::after {
-                  transition: all 0.31s ease-in-out;
-                  --circle-color: #86ac6a;
-
-               }
-            }
-
-            & span {
-               & svg {
-                  fill: var(--white);
-                  transform: none;
-                  transition: all 0.31s ease-in-out;
-               }
-            }
-         }
-
-      }
-
-      & span {
-         flex-grow: 1;
-         width: 27px;
-         height: 15px;
-         color: var(--green-1);
-         transition: all 0.31s ease-in-out;
-
-         & svg {
-            position: relative;
-            top: 42%;
-            z-index: 35;
-            width: 100%;
-            height: 100%;
-            /* margin-top: 72px; */
-            fill: currentColor;
-            transform: rotate(180deg);
+            fill: var(--white);
+            transform: none;
             transition: all 0.31s ease-in-out;
 
-            &:hover {
-               fill: var(--white);
-               transform: none;
-               transition: all 0.31s ease-in-out;
-
-            }
          }
       }
+   }
 
-      & p {
-         flex: 0;
-         max-width: 158px;
-         transition: all 0.31s ease-in-out;
+   & p {
+      flex: 0;
+      max-width: 158px;
+      transition: all 0.31s ease-in-out;
 
-      }
+   }
 
-      & div {
-         position: relative;
-         z-index: 5;
-         width: 66px;
-         height: 66px;
+   & div {
+      position: relative;
+      z-index: 5;
+      width: 66px;
+      height: 66px;
+      border-radius: 50%;
+      padding: 17px 13px 0;
+      background: var(--circle-color-solid);
+      background-repeat: no-repeat;
+      transition: all 0.31s ease-in-out;
+      --circle-color-solid: var(--green-1, #86ac6a);
+
+      &::after {
+         content: "";
+         position: absolute;
+         left: 59%;
+         top: 43%;
+         z-index: 10;
+         display: block;
+         width: 34px;
+         height: 34px;
          border-radius: 50%;
-         padding: 17px 13px 0;
-         background: var(--circle-color-solid);
-         transition: all 0.31s ease-in-out;
-         --circle-color-solid: var(--green-1, #86ac6a);
+         background: var(--circle-color);
+         transform: translate(-50%, -50%);
+         transition: all 0.11s ease-in-out;
 
-         &::after {
-            content: "";
-            position: absolute;
-            left: 59%;
-            top: 43%;
-            z-index: 10;
-            display: block;
-            width: 34px;
-            height: 34px;
-            border-radius: 50%;
-            background: var(--circle-color);
-            transform: translate(-50%, -50%);
-            transition: all 0.11s ease-in-out;
+      }
 
-         }
-
-         & svg {
-            position: relative;
-            z-index: 25;
-            width: 41px;
-            height: 41px;
-            fill: var(--green-3, #1f302d);
-            background-repeat: no-repeat;
-            transition: all 0.11s ease-in-out;
-         }
+      & svg, & img {
+         position: relative;
+         z-index: 25;
+         width: 41px;
+         height: 41px;
+         fill: var(--green-3, #1f302d);
+         background-repeat: no-repeat;
+         transition: all 0.11s ease-in-out;
       }
    }
 }
 
 
-.analitics__dropdown-container {
-}
-
-
-.dropdown-container {
+.analitics__submenu {
    display: none;
+   height: 0;
    border-radius: 15px;
    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.10);
    background: #ffffff;
@@ -183,6 +164,7 @@
 
       & li {
          position: relative;
+         display: none;
          padding-left: 18px;
          transition: all 0.11s ease-in-out;
 
@@ -206,11 +188,24 @@
 }
 
 
-.dropdown-container.activated {
+.analitics__card.active {
    display: flex;
+   height: 100%;
    opacity: 1;
    transition: all 1.6s ease-in-out;
    pointer-events: auto;
-}
+   --font-color: var(--white, #ffffff);
+   --bg-list: var(--green-1, #86ac6a);
 
+   & div {
+      background: var(--circle-color-transparent);
+      transition: all 0.31s ease-in-out;
+      --circle-color-transparent: #eef3ea;
+
+      &::after {
+         transition: all 0.31s ease-in-out;
+         --circle-color: #86ac6a;
+      }
+   }
+}
 
