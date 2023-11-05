@@ -9,9 +9,25 @@
    grid-template-columns: repeat(12, 1fr);
    align-items: start;
    justify-items: start;
+   @media (max-width: 1200px) {
+      grid-template-columns: repeat(6, 1fr);
+   }
+   @media (max-width: 768px) {
+      grid-template-columns: repeat(4, 1fr);
+   }
 
    & h2 {
       grid-column: 7 span;
+      @media (max-width: 1200px) {
+         grid-column: 5 span;
+         font-size: 27px;
+         line-height: 1.6;
+      }
+      @media (max-width: 768px) {
+         grid-column: 3 span;
+         font-size: 20px;
+         line-height: 1.6;
+      }
 
       & span {
          color: var(--green-1, #86ac6a);
@@ -22,6 +38,18 @@
       grid-column: 10 / span 3;
       justify-self: end;
       margin-top: 16px;
+      @media (max-width: 480px) {
+         display: none;
+      }
+   }
+}
+
+
+.analitics__btn {
+
+   display: none;
+   @media (max-width: 480px) {
+      display: flex;
    }
 }
 
@@ -40,6 +68,17 @@
    --prime-color: var(--green-1);
    --bg-list: var(--green-4, #eef3ea);
    --circle-color: var(--white, #ffffff);
+
+   @media (max-width: 1200px) {
+      grid-column: 6 span;
+      grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+      grid-template-rows: minmax(245px, auto);
+   }
+   @media (max-width: 768px) {
+      grid-column: 4 span;
+      grid-template-columns: repeat(auto-fit, minmax(158px, 1fr));
+      grid-template-rows: minmax(215px, auto);
+   }
 }
 
 
@@ -50,6 +89,14 @@
    line-height: 1.7;
    text-align: center;
    color: var(--font-color);
+   @media (max-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.7;
+   }
+   @media (max-width: 768px) {
+      font-size: 13px;
+      line-height: 1.7;
+   }
 }
 
 
