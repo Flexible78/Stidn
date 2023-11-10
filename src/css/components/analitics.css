@@ -89,6 +89,7 @@
    line-height: 1.7;
    text-align: center;
    color: var(--font-color);
+   transition: color 0.21s ease;
    @media (max-width: 1200px) {
       font-size: 14px;
       line-height: 1.7;
@@ -137,7 +138,7 @@
       width: 35px;
       height: 35px;
       background-image: url("/img/ic-arrow-drop-down.svg");
-
+      transition: color 0.21s ease;
    }
 }
 
@@ -153,6 +154,7 @@
    color: var(--circle-color);
    background: var(--circle-color-solid);
    background-repeat: no-repeat;
+   transition: color 0.21s ease;
    --circle-color-solid: var(--green-1, #86ac6a);
 
    & svg, & img {
@@ -164,7 +166,12 @@
       border-radius: inherit;
       color: inherit;
       fill: currentColor;
+      stroke: #1f302d;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 2.5625;
       background-repeat: no-repeat;
+      transition: color 0.21s ease;
    }
 
    &::before {
@@ -179,6 +186,7 @@
       height: 66px;
       border-radius: 100%;
       background-color: var(--prime-color);
+      transition: background-color 0.21s ease;
    }
 
    &::after {
