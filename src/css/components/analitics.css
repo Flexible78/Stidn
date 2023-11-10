@@ -245,14 +245,14 @@
          &::before {
             content: ""; /* Юникод символ буллета */
             position: absolute;
-            left: 0;
-            right: 50%;
-            top: 50%;
+            left: 4px;
+            top: 17px;
             z-index: 40;
-            width: 4px;
-            height: 4px;
-            border-radius: 50%;
-            color: currentColor;
+            display: block;
+            width: 5px;
+            height: 5px;
+            border-radius: 100%;
+            color: inherit;
             background-color: currentColor;
             transform: translate(-50%, -50%);
             transition: all 0.21s ease-in-out;
